@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unique Cuts Hair Salon</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f6fa;
+        color: #222;
+      }
+      header {
+        background: linear-gradient(90deg, #a770ef 0%, #f6d365 100%);
+        color: #fff;
+        padding: 40px 20px 30px 20px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(167, 112, 239, 0.08);
+      }
+      header h1 {
+        margin: 0 0 10px 0;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+      header p {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+      nav {
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav a {
+        color: #a770ef;
+        margin: 0 18px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: #f6d365;
+      }
+      main {
+        padding: 30px 10px 30px 10px;
+        max-width: 900px;
+        margin: auto;
+      }
+      section {
+        background: #fff;
+        margin-bottom: 28px;
+        padding: 22px 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(167, 112, 239, 0.07);
+      }
+      section h2 {
+        margin-top: 0;
+        color: #a770ef;
+        font-size: 1.5rem;
+      }
+      .gallery {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .gallery img {
+        width: 220px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(167, 112, 239, 0.08);
+        margin-bottom: 10px;
+      }
+      .services-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: flex-start;
+      }
+      .service-card {
+        background: #f4f6fa;
+        border-radius: 8px;
+        padding: 18px 14px;
+        min-width: 180px;
+        flex: 1 1 180px;
+        box-shadow: 0 1px 4px rgba(167, 112, 239, 0.06);
+        margin-bottom: 10px;
+      }
+      .service-card h3 {
+        margin: 0 0 8px 0;
+        color: #a770ef;
+        font-size: 1.1rem;
+      }
+      .service-card p {
+        margin: 0;
+        font-size: 0.98rem;
+      }
+      .book-btn {
+        padding: 12px 28px;
+        background: linear-gradient(90deg, #a770ef 0%, #f6d365 100%);
+        border: none;
+        color: #fff;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.2s;
+      }
+      .book-btn:hover {
+        background: linear-gradient(90deg, #f6d365 0%, #a770ef 100%);
+      }
+      footer {
+        text-align: center;
+        background: #a770ef;
+        color: #fff;
+        padding: 16px 10px;
+        margin-top: 30px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+      @media (max-width: 700px) {
+        .gallery {
+          flex-direction: column;
+          align-items: center;
+        }
+        .services-list {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Unique Cuts Hair Salon</h1>
+      <p>
+        Your style, our passion. Experience the best in hair care and beauty.
+      </p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Welcome to <strong>Unique Cuts</strong>, where we believe every client
+          deserves to look and feel their best. Our talented stylists offer the
+          latest trends in haircuts, coloring, and styling in a relaxing, modern
+          environment.
+        </p>
+      </section>
+
+      <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery">
+          <img
+            src="https://t4.ftcdn.net/jpg/03/55/16/43/360_F_355164398_5XM7LE98RWypsWXEPzL3m4Vd2oxqvN2q.jpg"
+            alt="Salon Interior"
+          />
+          <img
+            src="https://aniportalimages.s3.amazonaws.com/media/details/ANI-20241012084808.jpg"
+            alt="Haircut Example"
+          />
+          <img
+            src="https://onecricketnews.akamaized.net/parth-editor/oc-dashboard/news-images-prod/1694632312288_hhhh.jpg?type=mq"
+            alt="Hair Coloring"
+          />
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+          <div class="service-card">
+            <h3>Haircut & Styling</h3>
+            <p>
+              Trendy cuts and professional styling for men, women, and kids.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Hair Coloring</h3>
+            <p>
+              Highlights, balayage, global color, and more using premium
+              products.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Spa & Treatments</h3>
+            <p>
+              Hair spa, keratin, and nourishing treatments for healthy, shiny
+              hair.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Bridal & Events</h3>
+            <p>Special occasion styling and makeup for your big day.</p>
+          </div>
+        </div>
+        <button class="book-btn" onclick="showMessage(Appointment)">
+          Book Appointment
+        </button>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          <strong>Address:</strong> 143 Main Street, Tirupati City<br />
+          <strong>Phone:</strong> <a href="tel:+91 9577722291">+91 9577722291</a
+          ><br />
+          <strong>Email:</strong>
+          <a href="mailto:info@uniquecuts.com">info@elegantcuts.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Unique Hair Salon &mdash; Designed for ApexPlanet Internship
+    </footer>
+
+    <script>
+      function showMessage() {
+        alert(
+          "Thank you for choosing Elegant Cuts! Please call or email us to book your appointment."
+        );
+      }
+    </script>
+  </body>
+</html>
